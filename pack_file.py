@@ -6,7 +6,7 @@ from tkinter import ttk
 root = Tk()
 
 #create widget to make entry box for the calculator
-calcOutput=ttk.Entry(root)
+calcOutput=ttk.Entry(root, state='disabled')
 calcOutput.pack(side='top')
 
 # create widget to add buttons for +,-,*,and /
@@ -22,3 +22,8 @@ calcBtnSub.pack(side='right')
 
 calcBtnAdd=ttk.Button(root, text='+')
 calcBtnAdd.pack(side='right')
+
+calcBtnEqual=ttk.Button(root, text='=')
+calcBtnEqual.pack(side='right')
+
+# create widget for numbers in the calculator

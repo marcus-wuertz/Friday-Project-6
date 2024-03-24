@@ -25,3 +25,11 @@ usrNameLbl.place(x=0, y=105)
 # create an entry box for username
 usrNameEntry=ttk.Entry(root)
 usrNameEntry.place(x=80, y=105)
+
+# create a label for password
+pswrdLbl= ttk.Label(root, text='Password',font=(16))
+pswrdLbl.place(x=0, y=145)
+
+# create an entry box for password
+pswrdEntry=ttk.Entry(root)
+pswrdEntry.place(x=80, y=145)

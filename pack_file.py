@@ -3,6 +3,7 @@ from tkinter import ttk
 
 # Establish parent widget
 root = Tk()
+root.title("Calculator")
 
 # Create frame for the entry box
 entry_frame = ttk.Frame(root)

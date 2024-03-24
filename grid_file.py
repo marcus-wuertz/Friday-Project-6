@@ -33,4 +33,10 @@ userNameLbl.grid(row=5, column=1)
 
 userNameEntry=ttk.Entry(root)
 userNameEntry.grid(row=5,column=2)
-root.mainloop()
+
+# create label and entry box for email
+emailLbl= ttk.Label(root, text='Email', font=('TkDefaultFont',16))
+emailLbl.grid(row=6, column=1)
+
+emailEntry=ttk.Entry(root)
+emailEntry.grid(row=6,column=2)

@@ -40,3 +40,10 @@ emailLbl.grid(row=6, column=1)
 
 emailEntry=ttk.Entry(root)
 emailEntry.grid(row=6,column=2)
+
+# create label and entry box for password
+pswdLbl1= ttk.Label(root, text='Password', font=('TkDefaultFont',16))
+pswdLbl1.grid(row=7, column=1)
+
+pswdEntry1=ttk.Entry(root)
+pswdEntry1.grid(row=7,column=2)

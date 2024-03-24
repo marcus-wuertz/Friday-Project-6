@@ -3,7 +3,7 @@ from tkinter import ttk
 
 # Establish parent widget
 root = Tk()
-root.title("Log in page")
+root.title("Login page")
 
 # Set the size of the GUI window
 window_width = 400
@@ -11,7 +11,7 @@ window_height = 300
 root.geometry(f"{window_width}x{window_height}")
 
 # create widget for welcome message
-label1= ttk.Label(root, text='Returning user? Log in here!', font=('TkDefaultFont',20))
+label1= ttk.Label(root, text='Returning user? Login here!', font=('TkDefaultFont',20))
 label1.place(x=25, y=25)
 
 # create a button for new users to create an account
@@ -36,6 +36,10 @@ pswrdEntry.place(x=80, y=145)
 
 # create a button for users who forgot their password
 forgotBtn= ttk.Button(root, text='Forgot Password? Click here')
-forgotBtn.place(x=120, y=185)
+forgotBtn.place(x=120, y=170)
+
+# create a login button
+loginBtn=ttk.Button(root, text='Login')
+loginBtn.place(x=160,y=210)
 
 root.mainloop()

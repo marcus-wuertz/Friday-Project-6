@@ -13,3 +13,7 @@ root.geometry(f"{window_width}x{window_height}")
 # create widget for welcome message
 label1= ttk.Label(root, text='Returning user? Log in here!', font=('TkDefaultFont',20))
 label1.place(x=25, y=25)
+
+# create a button for new users to create an account
+newUsrBtn=ttk.Button(root, text='New user? Click here to make an account')
+newUsrBtn.place(x=80,y=65)

@@ -17,3 +17,11 @@ label1.place(x=25, y=25)
 # create a button for new users to create an account
 newUsrBtn=ttk.Button(root, text='New user? Click here to make an account')
 newUsrBtn.place(x=80,y=65)
+
+# create a label for username
+usrNameLbl= ttk.Label(root, text='Username',font=(16))
+usrNameLbl.place(x=0, y=105)
+
+# create an entry box for username
+usrNameEntry=ttk.Entry(root)
+usrNameEntry.place(x=80, y=105)

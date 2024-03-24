@@ -16,3 +16,6 @@ calcBtnDivide.pack(side='right')
 
 calcBtnMultiply=ttk.Button(root, text='x')
 calcBtnMultiply.pack(side='right')
+
+calcBtnSub=ttk.Button(root, text='-')
+calcBtnSub.pack(side='right')

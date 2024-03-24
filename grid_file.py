@@ -47,3 +47,10 @@ pswdLbl1.grid(row=7, column=1)
 
 pswdEntry1=ttk.Entry(root)
 pswdEntry1.grid(row=7,column=2)
+
+# create label and entry box for reenter password
+pswdLbl2= ttk.Label(root, text='Reenter Password', font=('TkDefaultFont',16))
+pswdLbl2.grid(row=8, column=1)
+
+pswdEntry2=ttk.Entry(root)
+pswdEntry2.grid(row=8,column=2)

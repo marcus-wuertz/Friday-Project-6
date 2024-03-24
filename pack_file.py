@@ -1,55 +1,74 @@
-#Import required packages
 from tkinter import *
 from tkinter import ttk
 
-# establish parent widget
+# Establish parent widget
 root = Tk()
 
-#create widget to make entry box for the calculator
-calcOutput=ttk.Entry(root, state='disabled')
-calcOutput.pack(side='top')
+# Create frame for the entry box
+entry_frame = ttk.Frame(root)
+entry_frame.pack(side='top', fill='x')
 
-# create widget to add buttons for +,-,*,and /
-calcBtnDivide=ttk.Button(root, text='÷')
-calcBtnDivide.pack(side='right')
+# Create entry box for the calculator
+calc_output = ttk.Entry(entry_frame, state='disabled')
+calc_output.pack(fill='x', expand=True)
 
+# Create frame for the operators
+operators_frame = ttk.Frame(root)
+operators_frame.pack(side='right', fill='y')
 
-calcBtnMultiply=ttk.Button(root, text='x')
-calcBtnMultiply.pack(side='right')
+# Create buttons for operators
+calc_btn_divide = ttk.Button(operators_frame, text='÷')
+calc_btn_divide.pack(side='top')
 
-calcBtnSub=ttk.Button(root, text='-')
-calcBtnSub.pack(side='right')
+calc_btn_multiply = ttk.Button(operators_frame, text='×')
+calc_btn_multiply.pack(side='top')
 
-calcBtnAdd=ttk.Button(root, text='+')
-calcBtnAdd.pack(side='right')
+calc_btn_sub = ttk.Button(operators_frame, text='-')
+calc_btn_sub.pack(side='top')
 
-calcBtnEqual=ttk.Button(root, text='=')
-calcBtnEqual.pack(side='right')
+calc_btn_add = ttk.Button(operators_frame, text='+')
+calc_btn_add.pack(side='top')
 
-# create widget for numbers in the calculator
-calcBtn1=ttk.Button(root, text='1')
-calcBtn1.pack(side='left')
+calc_btn_equal = ttk.Button(operators_frame, text='=')
+calc_btn_equal.pack(side='top')
 
-calcBtn2=ttk.Button(root, text='2')
-calcBtn2.pack(side='left')
+# Create frame for one column of numbers
+numbers_frame1 = ttk.Frame(root)
+numbers_frame1.pack(side='left')
 
-calcBtn3=ttk.Button(root, text='3')
-calcBtn3.pack(side='left')
+# Create buttons for numbers
+calc_btn_1 = ttk.Button(numbers_frame1, text='1')
+calc_btn_1.pack(side='top')
 
-calcBtn4=ttk.Button(root, text='4')
-calcBtn4.pack(side='left')
+calc_btn_2 = ttk.Button(numbers_frame1, text='2')
+calc_btn_2.pack(side='top')
 
-calcBtn5=ttk.Button(root, text='5')
-calcBtn5.pack(side='left')
+calc_btn_3 = ttk.Button(numbers_frame1, text='3')
+calc_btn_3.pack(side='top')
 
-calcBtn6=ttk.Button(root, text='6')
-calcBtn6.pack(side='left')
+calc_btn_4 = ttk.Button(numbers_frame1, text='4')
+calc_btn_4.pack(side='top')
 
-calcBtn7=ttk.Button(root, text='7')
-calcBtn7.pack(side='left')
+calc_btn_5 = ttk.Button(numbers_frame1, text='5')
+calc_btn_5.pack(side='top')
 
-calcBtn8=ttk.Button(root, text='8')
-calcBtn8.pack(side='left')
+# Create frame for the second column of numbers
+numbers_frame2 = ttk.Frame(root)
+numbers_frame2.pack(side='left')
 
-calcBtn9=ttk.Button(root, text='9')
-calcBtn9.pack(side='left')
+calc_btn_6 = ttk.Button(numbers_frame2, text='6')
+calc_btn_6.pack(side='top')
+
+calc_btn_7 = ttk.Button(numbers_frame2, text='7')
+calc_btn_7.pack(side='top')
+
+calc_btn_8 = ttk.Button(numbers_frame2, text='8')
+calc_btn_8.pack(side='top')
+
+calc_btn_9 = ttk.Button(numbers_frame2, text='9')
+calc_btn_9.pack(side='top')
+
+calc_btn_decimal = ttk.Button(numbers_frame2, text='.')
+calc_btn_decimal.pack(side='top')
+
+root.mainloop()

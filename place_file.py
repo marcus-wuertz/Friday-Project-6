@@ -33,3 +33,9 @@ pswrdLbl.place(x=0, y=145)
 # create an entry box for password
 pswrdEntry=ttk.Entry(root)
 pswrdEntry.place(x=80, y=145)
+
+# create a button for users who forgot their password
+forgotBtn= ttk.Button(root, text='Forgot Password? Click here')
+forgotBtn.place(x=120, y=185)
+
+root.mainloop()

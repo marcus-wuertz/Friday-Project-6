@@ -12,3 +12,7 @@ calcOutput.pack(side='top')
 # create widget to add buttons for +,-,*,and /
 calcBtnDivide=ttk.Button(root, text='÷')
 calcBtnDivide.pack(side='right')
+
+
+calcBtnMultiply=ttk.Button(root, text='x')
+calcBtnMultiply.pack(side='right')

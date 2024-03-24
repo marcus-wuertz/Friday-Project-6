@@ -56,7 +56,7 @@ pswdEntry2=ttk.Entry(root)
 pswdEntry2.grid(row=8,column=2)
 
 # create a button to submit form
-btn1= ttk.Button(root, text='Sign up')
+btn1= ttk.Button(root, text='Sign up now!')
 btn1.grid(row=9,column=2)
 
 root.mainloop()
